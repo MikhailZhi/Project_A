@@ -21,5 +21,5 @@ async def income(message: types.Message):
     else:
         pass
 
-if __name__ == '__main__':  # конструкция для запуска бота
+if __name__ == '__main__':  # конструкция для запуска бота.
     executor.start_polling(dp, skip_updates=True)
