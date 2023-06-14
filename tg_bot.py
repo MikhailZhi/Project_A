@@ -1,3 +1,5 @@
+# Pars_Sb
+# @Pasr_Sb_bot:
 from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
 
@@ -9,7 +11,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands='start')
 async def star_def(message: types.Message):
-    await bot.send_message(chat_id=message.chat.id, text='Вход в таверну')
+    await bot.send_message(chat_id=message.chat.id, text='Вы входите в бревенчатое здание таверны.')
 
 
 @dp.message_handler(content_types=types.ContentType.TEXT)
